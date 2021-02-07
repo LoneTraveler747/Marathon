@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{45D14150-237F-436D-9CFD-B493BC761BAE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MarathonSkills2016</RootNamespace>
+    <AssemblyName>MarathonSkills2016</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BMIKalkylitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMIKalkylitor.Designer.cs">
+      <DependentUpon>BMIKalkylitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMRKalkylator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMRKalkylator.Designer.cs">
+      <DependentUpon>BMRKalkylator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DobavlenieBlagotvoritelnuxOrganizaci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DobavlenieBlagotvoritelnuxOrganizaci.Designer.cs">
+      <DependentUpon>DobavlenieBlagotvoritelnuxOrganizaci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DobavlenieNovogoPolzovatela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DobavlenieNovogoPolzovatela.Designer.cs">
+      <DependentUpon>DobavlenieNovogoPolzovatela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformaciaBegyna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformaciaBegyna.Designer.cs">
+      <DependentUpon>InformaciaBegyna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformaciaMarafona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformaciaMarafona.Designer.cs">
+      <DependentUpon>InformaciaMarafona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InteractivnaiKarta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InteractivnaiKarta.Designer.cs">
+      <DependentUpon>InteractivnaiKarta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventar.Designer.cs">
+      <DependentUpon>Inventar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniAvtorizacii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniAvtorizacii.Designer.cs">
+      <DependentUpon>MeniAvtorizacii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAdministracii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAdministracii.Designer.cs">
+      <DependentUpon>MenuAdministracii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuBegyna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuBegyna.Designer.cs">
+      <DependentUpon>MenuBegyna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuKoordinacii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuKoordinacii.Designer.cs">
+      <DependentUpon>MenuKoordinacii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuRegistraciiBeguyna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuRegistraciiBeguyna.Designer.cs">
+      <DependentUpon>MenuRegistraciiBeguyna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoiSponsori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoiSponsori.Designer.cs">
+      <DependentUpon>MoiSponsori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NaskolkoDolgiMarafon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NaskolkoDolgiMarafon.Designer.cs">
+      <DependentUpon>NaskolkoDolgiMarafon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otchet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otchet.Designer.cs">
+      <DependentUpon>Otchet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PodtverjenieSponssorstva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PodtverjenieSponssorstva.Designer.cs">
+      <DependentUpon>PodtverjenieSponssorstva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PokazSertifekatora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PokazSertifekatora.Designer.cs">
+      <DependentUpon>PokazSertifekatora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostyplenieTovara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostyplenieTovara.Designer.cs">
+      <DependentUpon>PostyplenieTovara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProsmotrSponsorov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProsmotrSponsorov.Designer.cs">
+      <DependentUpon>ProsmotrSponsorov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProvercaDannix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProvercaDannix.Designer.cs">
+      <DependentUpon>ProvercaDannix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RadactirovaniePolzovatela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadactirovaniePolzovatela.Designer.cs">
+      <DependentUpon>RadactirovaniePolzovatela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RedactirovaniaProfila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RedactirovaniaProfila.Designer.cs">
+      <DependentUpon>RedactirovaniaProfila.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RedactirovanieProfilaBegyna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RedactirovanieProfilaBegyna.Designer.cs">
+      <DependentUpon>RedactirovanieProfilaBegyna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistraciaBegyna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistraciaBegyna.Designer.cs">
+      <DependentUpon>RegistraciaBegyna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistraciaMarafon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistraciaMarafon.Designer.cs">
+      <DependentUpon>RegistraciaMarafon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rezyltat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rezyltat.Designer.cs">
+      <DependentUpon>Rezyltat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RezyltatiPredudychixGonok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RezyltatiPredudychixGonok.Designer.cs">
+      <DependentUpon>RezyltatiPredudychixGonok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpisokBlagotvoritelnuxOrg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpisokBlagotvoritelnuxOrg.Designer.cs">
+      <DependentUpon>SpisokBlagotvoritelnuxOrg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SponsorBegyna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SponsorBegyna.Designer.cs">
+      <DependentUpon>SponsorBegyna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Podrobnanformacia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Podrobnanformacia.Designer.cs">
+      <DependentUpon>Podrobnanformacia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YpravlenieBegynami.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YpravlenieBegynami.Designer.cs">
+      <DependentUpon>YpravlenieBegynami.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YpravlenieBlagotvoritelnimiOrganizaciami.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YpravlenieBlagotvoritelnimiOrganizaciami.Designer.cs">
+      <DependentUpon>YpravlenieBlagotvoritelnimiOrganizaciami.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YpravleniePolzovatelami.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YpravleniePolzovatelami.Designer.cs">
+      <DependentUpon>YpravleniePolzovatelami.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YpravlenieVolonterami.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YpravlenieVolonterami.Designer.cs">
+      <DependentUpon>YpravlenieVolonterami.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZagryzkaVolonturov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZagryzkaVolonturov.Designer.cs">
+      <DependentUpon>ZagryzkaVolonturov.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BMIKalkylitor.resx">
+      <DependentUpon>BMIKalkylitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMRKalkylator.resx">
+      <DependentUpon>BMRKalkylator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DobavlenieBlagotvoritelnuxOrganizaci.resx">
+      <DependentUpon>DobavlenieBlagotvoritelnuxOrganizaci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DobavlenieNovogoPolzovatela.resx">
+      <DependentUpon>DobavlenieNovogoPolzovatela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformaciaBegyna.resx">
+      <DependentUpon>InformaciaBegyna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformaciaMarafona.resx">
+      <DependentUpon>InformaciaMarafona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InteractivnaiKarta.resx">
+      <DependentUpon>InteractivnaiKarta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventar.resx">
+      <DependentUpon>Inventar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniAvtorizacii.resx">
+      <DependentUpon>MeniAvtorizacii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAdministracii.resx">
+      <DependentUpon>MenuAdministracii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuBegyna.resx">
+      <DependentUpon>MenuBegyna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuKoordinacii.resx">
+      <DependentUpon>MenuKoordinacii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuRegistraciiBeguyna.resx">
+      <DependentUpon>MenuRegistraciiBeguyna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoiSponsori.resx">
+      <DependentUpon>MoiSponsori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NaskolkoDolgiMarafon.resx">
+      <DependentUpon>NaskolkoDolgiMarafon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PodtverjenieSponssorstva.resx">
+      <DependentUpon>PodtverjenieSponssorstva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PokazSertifekatora.resx">
+      <DependentUpon>PokazSertifekatora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostyplenieTovara.resx">
+      <DependentUpon>PostyplenieTovara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ProsmotrSponsorov.resx">
+      <DependentUpon>ProsmotrSponsorov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProvercaDannix.resx">
+      <DependentUpon>ProvercaDannix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadactirovaniePolzovatela.resx">
+      <DependentUpon>RadactirovaniePolzovatela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RedactirovaniaProfila.resx">
+      <DependentUpon>RedactirovaniaProfila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RedactirovanieProfilaBegyna.resx">
+      <DependentUpon>RedactirovanieProfilaBegyna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistraciaBegyna.resx">
+      <DependentUpon>RegistraciaBegyna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistraciaMarafon.resx">
+      <DependentUpon>RegistraciaMarafon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rezyltat.resx">
+      <DependentUpon>Rezyltat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RezyltatiPredudychixGonok.resx">
+      <DependentUpon>RezyltatiPredudychixGonok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpisokBlagotvoritelnuxOrg.resx">
+      <DependentUpon>SpisokBlagotvoritelnuxOrg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SponsorBegyna.resx">
+      <DependentUpon>SponsorBegyna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Podrobnanformacia.resx">
+      <DependentUpon>Podrobnanformacia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YpravlenieBegynami.resx">
+      <DependentUpon>YpravlenieBegynami.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YpravlenieBlagotvoritelnimiOrganizaciami.resx">
+      <DependentUpon>YpravlenieBlagotvoritelnimiOrganizaciami.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YpravleniePolzovatelami.resx">
+      <DependentUpon>YpravleniePolzovatelami.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YpravlenieVolonterami.resx">
+      <DependentUpon>YpravlenieVolonterami.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZagryzkaVolonturov.resx">
+      <DependentUpon>ZagryzkaVolonturov.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
